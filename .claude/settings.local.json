@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"/Users/nathanlee/Desktop/Geometry Dash AI\" && python3 --version && pip3 --version)",
+      "Bash(pip3 install:*)",
+      "Bash(python3 -c \"import gymnasium; import stable_baselines3; import mss; import cv2; import pynput; print\\('All imports OK'\\)\")",
+      "Bash(cd \"/Users/nathanlee/Desktop/Geometry Dash AI\" && python3 -c \"from src.env import GeometryDashEnv; from src.capture import ScreenCapture; from src.actions import execute_action; from src.detector import GameStateDetector; print\\('All modules import OK'\\)\")",
+      "Bash(cd \"/Users/nathanlee/Desktop/Geometry Dash AI\" && python3 -c \"from src.detector import GameStateDetector, tune_thresholds; d = GameStateDetector\\(\\); print\\('OK — cooldown:', d._cooldown_frames, '| diff threshold:', d._diff_threshold\\)\")",
+      "Bash(cd \"/Users/nathanlee/Desktop/Geometry Dash AI\" && python3 -c \"from src.detector import GameStateDetector; d = GameStateDetector\\(\\); print\\('OK'\\)\")",
+      "Bash(cd \"/Users/nathanlee/Desktop/Geometry Dash AI\" && python3 -c \"from src.detector import GameStateDetector, _State; d = GameStateDetector\\(\\); assert d._state is _State.NORMAL; print\\('State machine OK'\\)\")",
+      "Bash(cd \"/Users/nathanlee/Desktop/Geometry Dash AI\" && python3 -c \"from src.detector import GameStateDetector; d = GameStateDetector\\(\\); print\\('OK — full threshold:', d._candidate_full_threshold, '| freeze:', d._freeze_threshold\\)\")",
+      "Bash(cd \"/Users/nathanlee/Desktop/Geometry Dash AI\" && python3 -c \"from src.detector import GameStateDetector; d = GameStateDetector\\(\\); print\\('portal_frames_required:', d._portal_frames_required, '| portal_immunity_frames:', d._portal_immunity_frames\\)\")",
+      "Bash(cd \"/Users/nathanlee/Desktop/Geometry Dash AI\" && python3 -c \"from src.detector import GameStateDetector; d = GameStateDetector\\(\\); print\\('OK — death frames:', d._consecutive_death_frames, '| portal frames:', d._consecutive_portal_frames\\)\")",
+      "Bash(cd \"/Users/nathanlee/Desktop/Geometry Dash AI\" && python3 -c \"from src.env import GeometryDashEnv; print\\('OK'\\)\")"
+    ]
+  }
+}
